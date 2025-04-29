@@ -12,16 +12,3 @@ Este repositório contém a resolução da lista de exercícios da disciplina **
 - Paradigmas de POO (Programação Orientada a Objetos)
 
 ---
-
-## 📚 Exercícios Resolvidos
-
-### 1. (DRY) - Refatoração de Cálculo de Desconto
-
-**Problema**: Métodos distintos repetem a mesma lógica, variando apenas a taxa de desconto.
-
-**Solução**: Refatorei a classe para usar um único método que recebe o valor percentual como parâmetro. Isso elimina duplicação e segue o princípio **DRY** (Don't Repeat Yourself).
-
-```java
-public double calcularDesconto(double preco, double percentual) {
-    return preco - (preco * percentual);
-}
